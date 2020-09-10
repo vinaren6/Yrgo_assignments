@@ -1,8 +1,8 @@
 
 int value = 0;
-int windowSize = 600;
-float circleX = windowSize / 2;
-float circleY = windowSize / 2;
+
+float circleX = 300 ;
+float circleY = 300;
 PVector distance;
 int ballSize = 50;
 int[] colors = {0,0,0};
@@ -47,8 +47,8 @@ void collisionDetection() {
   	distance.x = distance.x * (-1);
   	changeColor();
   }
-  else if (circleX > windowSize - ballSize / 2 ) { 	
-  	circleX = windowSize - ballSize / 2;
+  else if (circleX > width - ballSize / 2 ) { 	
+  	circleX = width - ballSize / 2;
   	distance.x = distance.x * (-1);
   	changeColor();
   }
@@ -57,8 +57,8 @@ void collisionDetection() {
   	distance.y = distance.y * (-1);
   	changeColor();
   }
-  else if (circleY > windowSize - ballSize / 2 ) {
-  	circleY = windowSize - ballSize / 2;
+  else if (circleY > height - ballSize / 2 ) {
+  	circleY = height - ballSize / 2;
   	distance.y = distance.y * (-1);
   	changeColor();
   }

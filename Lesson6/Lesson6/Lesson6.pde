@@ -26,13 +26,14 @@ void draw() {
 	long currentTime = millis();
 
 	deltaTime = (currentTime - time) * 0.001f;
-	time = currentTime;
+
 	background(0);
 if (gameover) {
 	fill(255,255,255);
 	textSize(100);
 	textAlign(CENTER);
 	text("Game over!", width/2 , height/2); 
+	
 }
 else{
 	
@@ -44,7 +45,7 @@ else{
       balls[i].draw();
   }
 }
-	
+		time = currentTime;
 }
 void updatePlayerPosition() {
 	acc1.set(0,0);

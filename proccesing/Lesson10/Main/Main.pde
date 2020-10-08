@@ -39,21 +39,7 @@ void draw() {
 	}
 }
 	
- void mouseClicked() { 
- 	if (!start) {
- 		cell[mouseX / cellSize][mouseY / cellSize].alive = !cell[mouseX / cellSize][mouseY / cellSize].alive;
- 	}
- 	
- }   
- void keyPressed() { 
- 	if (!start) {
- 		if (key == 'r' || key == 'R') {
-		 	println("hello");
-	 		randomize();
-	 	}
- 	}
- 	
- }
+
 	
 
 void turnCellAndDraw() {
@@ -155,4 +141,20 @@ void update() {
 		}
 		
 	}
+
 }
+ void mouseClicked() { 
+ 	if (!start) {
+ 		cell[mouseX / cellSize][mouseY / cellSize].alive = !cell[mouseX / cellSize][mouseY / cellSize].alive;
+ 	}
+ 	
+ }   
+ void keyPressed() { 
+ 	if (!start) {
+ 		if (key == 'r' || key == 'R') {
+		 	println("hello");
+	 		randomize();
+	 	}
+ 	}
+ 	
+ }
